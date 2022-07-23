@@ -9,9 +9,59 @@
     <!-- Css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Fonts -->
-</head>
+        <!-- Popins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+
+    </head>
 <body>
-    
+    <!-- Logo Svg -->
+    <div class="logo">
+        <svg
+            width="24"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path d="M13 7H7V5H13V7Z" fill="currentColor" />
+            <path d="M13 11H7V9H13V11Z" fill="currentColor" />
+            <path d="M7 15H13V13H7V15Z" fill="currentColor" />
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 19V1H17V5H21V23H7V19H3ZM15 17V3H5V17H15ZM17 7V19H9V21H19V7H17Z"
+                fill="currentColor"
+            />
+        </svg>
+    </div>
+
+    <!-- Name Input -->
+    <div class="input-box" id="name-input-el">
+        <h4>Name:</h4>
+        <input type="text" placeholder="Google">
+    </div>
+
+    <!-- Url Input -->
+    <div class="input-box" id="url-input-el">
+        <h4>URL:</h4>
+        <input type="url" placeholder="https://www.google.com/">
+    </div>
+
+    <!-- Save Input Btn -->
+    <button id="save-input-btn">SAVE INPUT</button>
+
+    <h2>Your Links:</h2>
+
+    <!-- Links Tab - Ul -->
+    <ul class="links-tab" id="ul-el">
+        <li>Google:
+            <a href="https://www.microsoft.com">https://www.google.com</a>
+        </li>
+    </ul>
+
+    <!-- Javascript -->
     <script src="index.js"></script>
 </body>
 </html>
