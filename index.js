@@ -11,8 +11,12 @@ let fullInput = {nameInput, urlInput}
 
 // Save input BTN
 saveInputBtn.addEventListener("click", function () {
-    
-    // Name Input
+    if (nameEl.value === "" && urlEl.value === "") {
+        saveInputBtn.innerHTML = ` Enter Valid Input`
+    } else {
+
+        saveInputBtn.innerHTML = ` SAVE INPUT `
+        // Name Input
     nameInput.push(nameEl.value)
     nameEl.value = ""
 
@@ -21,23 +25,27 @@ saveInputBtn.addEventListener("click", function () {
     urlEl.value = ""
 
     render()
+    }
+    
 
 })
 
 // Render
 function render() {
     let listItems = ""
-    for (let i = 0; i < nameInput.length; i++) {
+
+        for (let i = 0; i < nameInput.length; i++) {
        
-        listItems += `
-            <li>${nameInput}: 
-            <a href='${urlInput}'>${urlInput}</a>
-            </li>
-        `
-        nameInput = []
-        urlInput = []
-        ulEl.innerHTML += listItems
+            listItems += `
+                <li>${nameInput}: 
+                <a href='${urlInput}'>${urlInput}</a>
+                </li>
+            `
+            nameInput = []
+            urlInput = []
+            ulEl.innerHTML += listItems
     }
+    
     
 }
 
