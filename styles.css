@@ -57,9 +57,24 @@ button {
     border-radius: 10px;
 
     margin: 15px 0 5px;
+    width: 170px;
 }
 
+#delete-btn {
+    background: #1B1D1F;
+}
+
+/* #delete-tab-btn {
+    background: none;
+    width: fit-content;
+    height: 40px;
+    padding-bottom: 6px;
+    margin: 0 5px 0 40px;
+    border-radius: 80px;
+} */
+
 button:hover {
+    width: 180px;
     font-size: 20px;
     background: rgb(82, 214, 205);
     cursor: pointer;
@@ -81,8 +96,8 @@ ul {
 li {
     border: 2px solid #4ECDC4;
     border-radius: 15px;
-    padding: 5px 100px 5px 15px;
-    margin: 5px 0;
+    padding: 8px 50px 8px 15px;
+    margin: 10px 0;
     width: fit-content;
 }
 
