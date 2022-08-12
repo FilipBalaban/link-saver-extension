@@ -61,7 +61,7 @@ function render(nameArr, linksArr) {
 // Save Tab Btn
 saveTabBtn.onclick = function() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        urlInput.value = tabs
+        urlInput.value = tabs[0].url
 
     })
 
