@@ -3,6 +3,7 @@ body {
     background: #EDF2F4;
     padding: 20px 30px;
     font-family: 'Poppins', sans-serif;
+    min-width: 400px;
 }
 
 .logo{
