@@ -106,3 +106,8 @@ a {
     color: #2B2D42;
     font-weight: 400;
 }
+
+#message-el {
+    font-size: 20px;
+    width: fit-content;
+}
